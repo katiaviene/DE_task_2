@@ -1,0 +1,6 @@
+ version: "3.7"
+  services:
+  app:
+    image: bite_de_task:latest
+    volumes:
+      - /Users/Katia/Downloads/ghtorrent-2019-05-20.csv:/file.csv
