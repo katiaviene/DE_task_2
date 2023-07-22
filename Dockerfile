@@ -26,7 +26,7 @@ WORKDIR /bite_DE_task
 COPY . /bite_DE_task
 
 VOLUME /bite_DE_task/data
-
+VOLUME /vite_DE_task/output
 
 RUN python -m pip install --upgrade pip virtualenv
 
