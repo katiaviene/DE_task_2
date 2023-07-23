@@ -6,7 +6,10 @@ services:
     volumes:
       - .:/bite_DE_task
       - .:/bite_DE_task/output
-      - /C/Users/Katia/Downloads:/bite_DE_task/data
+      - YOUR_DIRECTORY:/bite_DE_task/data
+    networks:
+      mynetwork:
+
   mysql:
     image: mysql:latest
     container_name: mysqldb
@@ -20,6 +23,13 @@ services:
       - db:/var/lib/mysql
     ports:
       - "3307:3306"
+    networks:
+      mynetwork:
+
 
 volumes:
     db:
+networks:
+  mynetwork:
+    driver: bridge
+    name: mynetwork

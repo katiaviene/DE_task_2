@@ -15,7 +15,8 @@ RUN curl -O https://downloads.apache.org/spark/spark-3.4.1/spark-3.4.1-bin-hadoo
 
 
 RUN pip install pyspark pyodbc
-COPY mysql-connector-j_8.1.0-1ubuntu23.04_all.deb $SPARK_HOME/jars/
+
+COPY mysql-connector-j-8.1.0.jar $SPARK_HOME/jars/
 
 #COPY mssql-jdbc-12.2.0.jre8.jar $SPARK_HOME/jars/
 
