@@ -1,4 +1,6 @@
 
+
+2023-07-23 16:47:32.904437 : Function 'show_result' ran in 0.137724 seconds.
 root
  |-- actor_login: string (nullable = true)
  |-- actor_id: string (nullable = true)
@@ -12,9 +14,9 @@ root
  |-- c_id: string (nullable = true)
  |-- commit_date: string (nullable = true)
 
-2023-07-23 16:38:26.951618 : Function 'get_data' ran in 6.179167 seconds.
-2023-07-23 16:38:27.061541 : Function 'popular_repos' ran in 0.099895 seconds.
-2023-07-23 16:40:59.432515 : Function 'write_to_db' ran in 152.362277 seconds.
+2023-07-23 17:06:50.712672 : Function 'get_data' ran in 6.034121 seconds.
+2023-07-23 17:06:50.847326 : Function 'popular_repos' ran in 0.122401 seconds.
+2023-07-23 17:08:56.865375 : Function 'write_to_db' ran in 126.003533 seconds.
 TABLE top_repos in DATABASE
 +-------------+-------+
 |         repo|  count|
@@ -24,9 +26,9 @@ TABLE top_repos in DATABASE
 |      pytorch|1956768|
 +-------------+-------+
 
-2023-07-23 16:41:00.584250 : Function 'show_result' ran in 1.141987 seconds.
-2023-07-23 16:41:00.654550 : Function 'most_active_users' ran in 0.058990 seconds.
-2023-07-23 16:43:51.965066 : Function 'write_to_db' ran in 171.301628 seconds.
+2023-07-23 17:08:57.089088 : Function 'show_result' ran in 0.213023 seconds.
+2023-07-23 17:08:57.140582 : Function 'most_active_users' ran in 0.041276 seconds.
+2023-07-23 17:10:55.506716 : Function 'write_to_db' ran in 118.357896 seconds.
 TABLE top_users in DATABASE
 +------------+-------+
 |author_login|  count|
@@ -36,9 +38,10 @@ TABLE top_users in DATABASE
 |   ilia-cher| 711552|
 +------------+-------+
 
-2023-07-23 16:43:52.143622 : Function 'show_result' ran in 0.165864 seconds.
-2023-07-23 16:47:32.755753 : Function 'write_to_db' ran in 220.556755 seconds.
-TABLE busy_day in DATABASE
+2023-07-23 17:10:55.652145 : Function 'show_result' ran in 0.135016 seconds.
+2023-07-23 17:10:55.697773 : Function 'busy_time' ran in 0.037052 seconds.
+2023-07-23 17:13:05.914678 : Function 'write_to_db' ran in 130.205891 seconds.
+TABLE busy_time in DATABASE
 +--------------------+------+
 |         commit_date| count|
 +--------------------+------+
@@ -47,4 +50,4 @@ TABLE busy_day in DATABASE
 |2019-05-20 12:53:...|232943|
 +--------------------+------+
 
-2023-07-23 16:47:32.904437 : Function 'show_result' ran in 0.137724 seconds.
+2023-07-23 17:13:06.040545 : Function 'show_result' ran in 0.116678 seconds.

@@ -97,6 +97,7 @@ def most_active_users(df):
 
 
 @redirect_output_to_txt("output/report.txt")
+@calculate_running_time
 def busy_time(df):
     result_df = df.groupBy("commit_date") \
         .agg(F.count("pr_id").alias("count")) \
@@ -126,7 +127,3 @@ if __name__ == "__main__":
     show_result('top_repos')
     users = most_active_users(df)
     write_to_db(users, 'top_users')
-    show_result('top_users')
-    busy_time_df = busy_time(df)
-    write_to_db(busy_time_df, 'busy_time')
-    show_result('busy_day')
